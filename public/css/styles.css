@@ -13,28 +13,39 @@
 html{
     font-family: 'Karla', sans-serif;
 }
-
+.container{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    justify-content: center;
+}
 /* Style the header */
 .header {
+    position: fixed;
     background: var(--white);
     color: var(--darkBlue);
-  }
-  
-  
-  /* The sticky class is added to the header with JS when it reaches its scroll position */
-  .sticky {
-    position: fixed;
+    padding-top: 10px;
     top: 0;
-    width: 100%
+    width: auto;
   }
+.header a{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: .5rem;
+    text-decoration: none;
+    color: var(--darkBlue);
+}
   
-  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
-    padding-top: 102px;
-  }
-
-
-
+  /* buttons */
+button{
+    border: none;
+    padding: .5rem 3rem;
+    background-color: var(--lightGreen);
+    color: var(--darkGreen);
+}
+button:hover{
+    background-color: var(--darkGreen);
+    color: var(--white);
+}
 .buttonText{
     font-weight: bold;
     font-size: 14px;

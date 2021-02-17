@@ -13,14 +13,14 @@
 </head>
 <body>
     <header class="header" id="myHeader">
-        <div class="container">
-            <img src="logo/PNGS/SRrecordings.png" alt="Site Logo">
-            <a href="#">Home</a>
-            <a href="#">Reords</a>
-            <a href="#">Music</a>
-            <a href="#">Artists</a>
-            <a href="#">Concerts</a>
-            <button>Sign Up</button>
+        <div class="container buttonText">
+            <img style=" padding-right: 5rem; padding-top: 1rem;"src="logo/PNGS/SRrecordings.png" alt="Site Logo">
+            <a href="#"><img src="Icons/PNGs/Home.png"> Home</a>
+            <a href="#"><img src="Icons/PNGs/Records.png"> Records</a>
+            <a href="#"><img src="Icons/PNGs/Music.png"> Music</a>
+            <a href="#"><img src="Icons/PNGs/Artists.png"> Artists</a>
+            <a href="#"><img src="Icons/PNGs/Concerts.png"> Concerts</a>
+            <button class="buttonText">Sign Up</button>
         </div>
     </header>
     <main>
@@ -44,25 +44,5 @@
     <h1>1</h1>
     <h1>1</h1>
 
-    <script type="text/javascript">
-    // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
-
-// Get the header
-var header = document.getElementById("myHeader");
-
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-    
-    </script>
 </body>
 </html>
