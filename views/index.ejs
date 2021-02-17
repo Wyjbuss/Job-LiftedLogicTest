@@ -12,16 +12,44 @@
     <title>Lifted Logic</title>
 </head>
 <body>
-    <h1>h1</h1>
-    <span class="headerHeroText">hello this is header text</span>
+    <div class="header" id="myHeader">
+        <h2>My Header</h2>
+    </div>
+    <h1>1</h1>
+    <h1>1</h1>
+    <h1>1</h1>
+    <h1>1</h1>
+    <h1>1</h1>
+    <h1>1</h1>
+    <h1>1</h1>
+    <h1>1</h1>
+    <h1>1</h1>
+    <h1>1</h1>
+    <h1>1</h1>
+    <h1>1</h1>
+    <h1>1</h1>
+    <h1>1</h1>
+    <h1>1</h1>
 
-    <h2>h2</h2>
-    <span class="headerText">hello this is header text</span>
+    <script type="text/javascript">
+    // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
 
-    <h3>h3</h3>
-    <span class="headerTwoText">hello this is header text</span>
+// Get the header
+var header = document.getElementById("myHeader");
 
-    <h4>h4</h4>
-    <span class="headerThreeText">hello this is header text</span>
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+    
+    </script>
 </body>
 </html>
