@@ -1,0 +1,57 @@
+/* color var */
+:root{
+    --darkBlue: #001D5D;
+    --lightBluse: #B8BFCF;
+    --darkGreen: #68C242;
+    --lightGreen: #D9F0D0;
+    --black: #000;
+    --white: #fff;
+    --gray: #525252;
+    --lightGray: #F6F6F6;
+}
+
+html{
+    font-family: 'Karla', sans-serif;
+}
+
+
+.buttonText{
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 18px;
+}
+.bodyText{
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 25px;
+}
+
+
+/* Header text */
+.headerHeroText{
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 0px;
+    line-height: 50px;
+}
+.headerText{
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 0px;
+    line-height: 50px;
+}
+.headerTwoText{
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 0px;
+    line-height: 40px;
+}
+.headerThreeText{
+    font-weight: bold;
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+    
