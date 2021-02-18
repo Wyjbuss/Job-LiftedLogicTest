@@ -9,40 +9,60 @@
     --gray: #525252;
     --lightGray: #F6F6F6;
 }
-
+body{
+    margin: 0;
+}
 html{
     font-family: 'Karla', sans-serif;
 }
+
 .container{
     padding-left: 5rem;
     padding-right: 5rem;
-    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    
+}
+div{
+    width: auto;
 }
 /* Style the header */
-.header {
+.navbar {
+    right: 0;
+    left: 0;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 10px;
     position: fixed;
+    overflow: hidden;
+    width: auto;
     background: var(--white);
     color: var(--darkBlue);
-    padding-top: 10px;
     top: 0;
     width: auto;
   }
-.header a{
+.navbar a{
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: .5rem;
     text-decoration: none;
     color: var(--darkBlue);
 }
-  
   /* buttons */
 button{
+    border: none;
+    padding: .5rem 3rem;
+}
+.navButton{
     border: none;
     padding: .5rem 3rem;
     background-color: var(--lightGreen);
     color: var(--darkGreen);
 }
-button:hover{
+.navButton:hover{
     background-color: var(--darkGreen);
     color: var(--white);
 }
@@ -63,9 +83,9 @@ button:hover{
 /* Header text */
 .headerHeroText{
     font-weight: bold;
-    font-size: 40px;
-    letter-spacing: 0px;
-    line-height: 50px;
+    font-size: 65px;
+    letter-spacing: .73px;
+    line-height: 76px;
 }
 .headerText{
     font-weight: bold;
@@ -86,3 +106,18 @@ button:hover{
     line-height: 25px;
 }
     
+
+
+/* animations */
+#animBackground {
+    margin-top: 5rem;
+    width: auto;
+    border: 1px solid black;
+    background-image: url('../Images/image1.png');
+    background-position: top left;
+    animation: mymove 10s infinite;
+  }
+  
+  @keyframes mymove {
+    50% {background-position: center;}
+  }
