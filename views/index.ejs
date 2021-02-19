@@ -75,15 +75,36 @@
                 nunc sed velit dignissim. A pellentesque sit 
                 amet porttitor eget dolor morbi non.
             </div>
+<script>
+    var slidIndex = 1
+    showSlides(slidIndex)
 
-            <div class="container">
+    function plusSlide(n){
+        showSlides(slideIndex += n)
+    }
+
+   
+    function showSlides(n){
+        var i;
+        var slides = document.getElementsByClassName("mySlides")  
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.backgroundColor = "#e6e6e6"; 
+        }
+        slides[slideIndex-1].style.backgroundColor = "white";
+  
+    }
+</script>
+            <div class="">
                 <!-- one card -->
-                <div style="right: 200px;position: relative; float: left;" class="card">
+                <div class="" style=" float: left;">
+                <div class="card mySlides">
                     <img style="padding-top: 2rem; float: left;" src="Images/image4.png" alt="image of an album cover">
                     <div style="text-align: left; padding-left: 2rem; float: right;">
                         <div class="headerTwoText">Trapsoul</div>
                         <div style="color: #68C242;" class="headerThreeText">BRYSON TILLER</div>
-                        <div style="max-width: 300px;" class="bodyText">Lorem ipsum dolor sit 
+                        <div style="max-width: 300px;" class="bodyText">1Lorem ipsum dolor sit 
                             amet, consectetur adipiscing 
                             elit, sed do eiusmod tempor 
                             incididunt ut labore et dolore 
@@ -92,13 +113,16 @@
 
                     </div>
                 </div>
+            </div>
+
                   <!-- one card -->
-                <div style="left: 200px;position: relative; float: right;" class="card">
+                  <div class="" style=" float: left;">
+                <div  class="card mySlides">
                     <img style="padding-top: 2rem;float: left;" src="Images/image4.png" alt="image of an album cover">
                     <div style="text-align: left; padding-left: 2rem; float: right;">
                         <div class="headerTwoText">Trapsoul</div>
                         <div style="color: #68C242;" class="headerThreeText">BRYSON TILLER</div>
-                        <div style="max-width: 300px;" class="bodyText">Lorem ipsum dolor sit 
+                        <div style="max-width: 300px;" class="bodyText">2Lorem ipsum dolor sit 
                             amet, consectetur adipiscing 
                             elit, sed do eiusmod tempor 
                             incididunt ut labore et dolore 
@@ -107,14 +131,16 @@
 
                     </div>
                 </div>
-                
+            </div>
+
                   <!-- one card -->
-                <div style="position: relative;float: none;" class="card">
+                  <div class="" style="float: left;">
+                <div  class="card mySlides">
                     <img style="padding-top: 2rem;float: left;" src="Images/image4.png" alt="image of an album cover">
                     <div style="text-align: left; padding-left: 2rem; float: right;">
                         <div class="headerTwoText">Trapsoul</div>
                         <div style="color: #68C242;" class="headerThreeText">BRYSON TILLER</div>
-                        <div style="max-width: 300px;" class="bodyText">Lorem ipsum dolor sit 
+                        <div style="max-width: 300px;" class="bodyText">3Lorem ipsum dolor sit 
                             amet, consectetur adipiscing 
                             elit, sed do eiusmod tempor 
                             incididunt ut labore et dolore 
@@ -123,14 +149,15 @@
 
                     </div>
                 </div>
+            </div>
 
                
             </div>
 
 
             <div>
-                <img class="controllerArrow" onClick="" src="Icons/PNGs/left_controller.png" alt="left scroll image"> 
-                <img class="controllerArrow" onClick="" src="Icons/PNGs/Right_controller.png" alt="right scroll image">
+                <img class="prev controllerArrow" onClick="plusSlide(-1)" src="Icons/PNGs/left_controller.png" alt="left scroll image"> 
+                <img class="next controllerArrow" onClick="plusSlide(1)" src="Icons/PNGs/Right_controller.png" alt="right scroll image">
             </div>
         </div>
     </div>
