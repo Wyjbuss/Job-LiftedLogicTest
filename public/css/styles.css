@@ -53,9 +53,9 @@ div{
     color: var(--darkBlue);
 }
   /* buttons */
-button{
+.sectionOneButton{
     border: none;
-    padding: .5rem 3rem;
+    text-decoration: none;
 }
 .navButton{
     border: none;
